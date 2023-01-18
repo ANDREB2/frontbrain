@@ -69,7 +69,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    const urlImg = fetch('http://localhost:3001/imageurl', {
+    const urlImg = fetch('https://smartbrainapi-3elx.onrender.com/imageurl', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -95,7 +95,7 @@ class App extends Component {
           const data = result;
           this.displayFaceBox(this.calculateFaceLocation(data));
           
-          fetch('http://localhost:3001/image', {
+          fetch('https://smartbrainapi-3elx.onrender.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
