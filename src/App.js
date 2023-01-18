@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import ParticlesBg from 'particles-bg';
-import Clarifai from 'clarifai';
 import './reportWebVitals';
-//import ConfigPerfil from './components/perfil/ConfigPerfil';
 import Navigation from './components/navigation/Navigation';
 import SignIn from './components/signin/SignIn';
 import Register from './components/register/Register';
